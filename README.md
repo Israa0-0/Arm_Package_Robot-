@@ -1,42 +1,6 @@
-# SM2022_AI_Task-02
-# Installing package arduino robot arm in ROS
-This repo aims to describe step by step tutorial on arduino robot arm with ROS package in Ubuntu 20.04
-<br>
 
-![01](https://user-images.githubusercontent.com/101488769/180624681-b26da4fc-7f29-4c71-8dc4-968524c12055.jpg)
-<br>
-
-### Table of Contents
-* [1- Installing-ROS](#1-Installing-ROS)
-* [2- Installing package arduino robot arm](#2-Installing-package-arduino-robot-arm)
-
-
-<br>
-
-## 1-Installing-ROS
-### 1.1 Installation
-Install the `ros-noeitic-ros-base` package following these directions:
-* ROS Noetic - [ROS Install Instructions](http://wiki.ros.org/Installation/Ubuntu)
-<br>
-
-
-### 1.2 Video to help
-https://www.youtube.com/watch?v=ZA7u2XPmnlo&t=106s
-<br>
-<br>
-
-
-### 1.3 Testing
-Before proceeding, if you're using ROS Noetic make sure that `roscore` is running first:
-
-```bash
-$ roscore
-```
-![Task 01 1](https://user-images.githubusercontent.com/101488769/176632070-d9e8a783-d149-4c0d-8739-6081b1bb2c2f.png)
-<br>
-
-## 2-Installing-package-arduino-robot-arm
-### 2.1 Installation
+## Installing-package-arduino-robot-arm
+### Installation
 Install the `robot-arm-with-ros-noeitic` package following these directions:
 
 ```sudo apt-get install ros-noetic-catkin```
@@ -89,14 +53,14 @@ finally , use the following line to update the "bashrc" file :
 
 <b> 
 
-### 2.2 Video to help
+### Video to help
 https://youtu.be/fr6TXEd2rXI?t=513
 <br>
 <br>
 
 <b> 
 
-## 2.3 Testing
+## Testing
  (You may have a look at the _videos folder_ after this section)  
 ### Controlling the robot arm by joint_state_publisher:
 run the line :  
@@ -109,10 +73,6 @@ don't forget to connect with hardware by running the following line in a new ter
 ```bash
 $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
 ```
-<br>
-<br>
-<br>
-
 ### Controlling the robot arm by Moveit and kinematics:
 run the line :  
 ```bash
