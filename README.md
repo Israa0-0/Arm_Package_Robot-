@@ -1,7 +1,7 @@
 ## Arm_Package_Robot
 
-Installing-package-arduino-robot-arm
-### 2.1 Installation
+### Installing-package-arduino-robot-arm
+## Installation
 Install the `robot-arm-with-ros-noeitic` package following these directions:
 
 ```sudo apt-get install ros-noetic-catkin```
@@ -36,14 +36,14 @@ then save it by:
 finally , use the following line to update the "bashrc" file :  
 ```source ~/.bashrc```
 <b> 
-### 2.2 Video to help
+## Video to help
 https://youtu.be/fr6TXEd2rXI?t=513
 <br>
 <br>
 <b> 
-## 2.3 Testing
+## Testing
  (You may have a look at the _videos folder_ after this section)  
-### Controlling the robot arm by joint_state_publisher:
+**Controlling the robot arm by joint_state_publisher:**
 run the line :  
 ```bash
 $ roslaunch robot_arm_pkg check_motors.launch
@@ -58,7 +58,7 @@ $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
 <br>
 <br>
 
-### Controlling the robot arm by Moveit and kinematics:
+**Controlling the robot arm by Moveit and kinematics:**
 run the line :  
 ```bash
 $ roslaunch moveit_pkg demo.launch
@@ -69,3 +69,4 @@ also connect with hardware by running run the following line :
 ```bash
 $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
 ```
+
